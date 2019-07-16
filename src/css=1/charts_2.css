@@ -1,0 +1,94 @@
+@media screen and (min-width: 961px){
+	.how_it_works > .article__container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.how_it_works > .button__container > form {
+		margin-left: 9.7vw;
+	}
+
+	.charts__holder{
+		justify-content: flex-start;
+		position: relative;
+		padding-left: 9.7vw; /*140px;*/
+		padding-right: 9.7vw; /*140px;*/
+	}
+
+	.important_message__holder{
+		width: 30.5vw; /*440px;*/
+		height: 220px;
+		order: 0;
+		box-sizing: border-box;
+		padding: 35px;
+	}
+	.important_message{
+		font-size: 22px;
+	}
+
+	.chart_block:nth-child(2),
+	.chart_block:nth-child(3){
+		order: -1;
+	}
+	.chart_block:nth-child(4),
+	.chart_block:nth-child(5){
+		position: absolute;
+		top: 170px;
+		margin-top: 0;
+	}
+	.chart_block:nth-child(5){
+		margin-left: 24.7vw; /*сумма ширины контейнера и margin-right*/
+	}
+	.chart_block{
+		border: 2px dotted black;
+		width: 19.8vw; /*285px;*/
+		height: 75px;
+		margin-right: 4.9vw; /*70px;*/
+		position: relative;
+	}
+	.chart_block:not(:nth-child(-n+5)){
+		margin-top: 4.9vw;
+	}
+
+	.chart_block:before,
+	.chart_block:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border: 8px solid transparent;
+		border-right: 0;
+	}
+	.chart_block:before {
+		width: 2.7vw; /*30px;*/
+		top: 33px;
+		left: calc(100% + 1vw);
+		border: 1px solid#34cc99;
+	}
+	.chart_block:after {
+		top: 26px;
+		left: calc(100% + 3.7vw);
+		border-left-color: #34cc99;
+	}
+
+	/* убрать стрелочки у 3-5-8  блоков */
+	.chart_block:nth-child(3):before,
+	.chart_block:nth-child(3):after,
+	.chart_block:nth-child(n+3):nth-child(3n+2):before,
+	.chart_block:nth-child(n+3):nth-child(3n+2):after { 
+		display: none;
+	}
+
+	.arrow{
+		width: 25.3vw; /*365px;*/
+		position: absolute;		
+		left: 19vw; /*275px;*/
+	}
+	#arrow_1{
+		top: 107px;
+	}
+	#arrow_2{
+		top: 252px;
+	}
+}

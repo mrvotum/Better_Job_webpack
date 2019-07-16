@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles_form.css">
+  <link rel="stylesheet" href="css/reset_form.css">
+  <link rel="stylesheet" href="css/styles_form_desktop.css">
+  <title>form</title>
+</head>
+<body>
+<main class="content form__container">
+  <div class="top_holder">
+    <h2 class="article_title">betterjob</h2>
+    <a href="index.html" class="btn_back">&#60;&#60;</a>
+  </div>
+
+  <div class="content__block information_form">
+    <div class="article__container left-align">
+      <div class="important_message__holder">
+        <p class="important_message">Заполните короткую форму, чтобы мы приготовили идеальное предложение</p>
+      </div>
+      <form class="form">
+        <div class="form__row">
+          <label class="form__label">
+            <span class="form__hint">Меня зовут:</span>
+            <input class="field" id="name-field" name="name" required>
+          </label>
+        </div>
+
+        <div class="form__row">
+          <span class="form__label">Я</span>
+
+          <input class="invisible" type="checkbox" id="programmer">
+          <label class="check_btn" for="programmer" id="programmer_label">программист</label>
+
+          <input class="invisible" type="checkbox" id="designer">
+          <label class="check_btn" for="designer" id="designer_label">дизайнер</label>
+
+          <input class="invisible" type="checkbox" id="it_master">
+          <label class="check_btn" for="it_master" id="it_master_label">сисадмин</label>
+
+          <input class="invisible" type="checkbox" id="QA">
+          <label class="check_btn" for="QA" id="QA_label">QA</label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label">
+            <span class="form__hint">Я живу в</span>
+            <select class="selector" name="live_country" id="live_country-field">
+              <option value="" >Выберете страну из списка</option>
+              <option value="1">value 1</option>
+              <option value="2">value 2</option>
+              <option value="3">value 3</option>
+            </select>
+          </label> 
+        </div> 
+
+        <div class="form__row">
+          <label class="form__label">
+            <span class="form__hint">Хочу переехать в</span>
+            <select class="selector" name="want_to_country" id="want_to_country-field">
+              <option value="" >Выберете страну из списка</option>
+              <option value="1">value 1</option>
+              <option value="2">value 2</option>
+              <option value="3">value 3</option>
+            </select>
+          </label> 
+        </div> 
+
+        <div class="form__row">
+          <label class="form__label">
+            <span class="form__hint">Мой адрес для связи:</span>
+            <input class="field" type="email" name="email" id="email-field" placeholder="Введите Ваш Email" required>
+          </label> 
+        </div>
+
+        <div class="form__row">
+          <label class="checkbox_holder" for="agree">
+            <span class="form__hint">Я согласен, чтобы мной начали интересоваться лучшие стартапы Европы</span>
+            <input type="checkbox" id="agree">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label">
+            <span class="form__hint">Я даже готов </span><a href="#" style="color:#34CC99" onclick="document.getElementById('getFile').click()">загрузить</a><span class="form__hint"> файл CV</span>
+            <input type='file' id="getFile" style="display:none">
+          </label> 
+        </div>
+
+        <div class="form__row">  
+          <input class="btn green" type="submit" value="Отправить">
+        </div>  
+      </form>
+    </div>
+  </div>
+</main>
+</body>
+</html>

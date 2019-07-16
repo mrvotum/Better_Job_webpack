@@ -1,0 +1,6 @@
+<svg viewBox="0 0 366 57" xmlns="http://www.w3.org/2000/svg">
+	<path d="M351.5,13.5 L378.5,13.5" stroke="#34CC99" transform="translate(365.000000, 13.500000) rotate(-270.000000) translate(-365.000000, -13.500000)"></path>
+	<polygon fill="#34CC99" transform="translate(7.000000, 47.500000) rotate(-270.000000) translate(-7.000000, -47.500000) " points="15.5 47.5 -1.5 54.5 -1.5 40.5"></polygon>
+	<path d="M8,27 L365,27" stroke="#34CC99" stroke-linecap="square"></path>
+	<path d="M-4,38 L18,38" stroke="#34CC99" stroke-linecap="square" transform="translate(7.000000, 38.000000) rotate(-270.000000) translate(-7.000000, -38.000000) "></path>
+</svg>

@@ -1,0 +1,224 @@
+@media screen and (min-width: 961px){
+	body {
+		font-family: OpenSans-Regular;
+	}
+
+	h1 {
+		font-size: 72px;
+	}
+
+	.header {
+		background-image: url(../img/tower_desktop.png);
+	}
+
+	.top_holder{
+		padding-left: 46px;
+		padding-right: 40px;
+	}
+
+	.icons_holder {
+		margin-top: 35vh; /*25%; 360px*/
+		justify-content: center;
+	}
+	.icons_holder > svg {
+		width: 5.56%;
+	}
+	.icons_holder > svg:not(:first-child) {
+		padding-left: 5.3%;
+	}
+
+	.header__container::after,
+	.header__container::before{
+		content: 'V';		
+		left: 50%;
+		color: #000;
+		font-weight: 700;
+		position: absolute;
+		font-size: 24px;
+	}
+  .header__container::after{
+		bottom: -4px;
+  }
+	.header__container::before{
+		bottom: -24px;
+	}
+
+	.header__container > .article__container{
+		margin-top: 11%;
+	}
+
+	.article__container > .description_text.headers {
+		padding: 32px 31.25%;
+	}
+
+	.description_text.headers{
+		font-size: 27px;
+	}
+	
+	.button__container > form {
+		align-items: flex-start;
+	}
+	
+	.header__container > .button__container > form {
+		margin-top: 2.15%;
+	}
+
+	.header__container > .button__container > form {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.btn:first-child{
+		margin-right: 40px;
+	}
+	.btn{
+		margin-bottom: 4.8%;
+	}
+	
+
+	.concepts{
+		display: flex;
+		justify-content: center;
+	}
+	.concepts > .article__container{
+		width: 270px;
+		margin-bottom: 100px;
+	}
+	.concepts > .article__container:nth-child(2){
+		order: 1;
+	}
+	.concepts > .article__container:nth-child(3){
+		margin-right: 70px;
+		margin-left: 70px;
+	}
+	.concepts > .article__container > svg {
+		width: 85px;
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.left-align{
+		padding: 62px 86px; 
+	}
+
+	.about_program > .article__container > .article_title{
+		margin-left: -90px;
+	}
+
+	.about_program > .article__container{
+		width: 50%;
+		background-color: #34CC99;
+		box-sizing: border-box;
+		padding: 30px 105px 90px 130px;
+	}
+	.about_program > .article__container > .article_title{
+		background-color: #fff;
+	}
+	.article_text{
+		padding-top: 60px;
+		font-size: 22px;
+	}
+	.about_program > .article__container > .button__container > form{
+		justify-content: flex-start;
+	}
+
+	.img_holder{
+		background: url(../img/Bundesarchiv.png) no-repeat;
+		background-color: #696969;
+		background-size: cover;
+		z-index: 0;
+		width: 50%;
+		height: 100%;
+		left: 50%;
+	}
+
+	.how_it_works > .button__container{
+		padding-left: 133px;
+	}
+
+	.why_berlin{
+		display: flex;
+	}
+
+	.why_berlin > .article__container{
+		width: 50%;
+		padding-left: 140px;
+		padding-right: 200px;
+		box-sizing: border-box;
+	}
+
+	.why_berlin > .article__container > .article_title{
+		margin-left: -90px;
+	}
+
+	.why_berlin > .article__container > .button__container{
+		display: block;
+		margin-top: 54px;
+		position: relative;
+	}
+	.why_berlin > .article__container > .button__container::before{
+		content: '_ _ _';
+		position: absolute;
+		color: #34CC99;
+		font-weight: 700;
+		left: -40px;
+		top: 10px;
+	}
+
+	.slider{
+		width: 486px;
+		height: 382px;
+		margin: 148px 0px 41px 140px;
+		position: relative;
+		box-sizing: border-box;
+	}
+	.slider:before{
+		content: '+';
+		position: absolute;
+		left: -6px;
+		top: -12px;
+		font-weight: 700;
+	}
+	.slider:after{
+		content: '+';
+		position: absolute;
+		left: 99.5%;
+		bottom: -12px;
+		font-weight: 700;
+	}
+
+
+	.the_crew > .article__container{
+		padding-right: 800px;
+	}
+	.the_crew > .article__container > .article_text{
+		padding-top: 170px;
+		padding-left: 66px;
+	}
+
+	.the_crew > .button__container{
+		padding-left: 140px;
+	}
+
+	.bgi_holder{
+		background-image: url(../img/hands_mobile.jpg);
+		background-size: cover;
+		font-family: OpenSans-regular;
+		width: 100%;
+	}
+
+	.footer__container {
+		/*padding-top: 710px;
+		margin-top: -400px;*/
+		background-image: none;
+		/*z-index: -1;*/
+	}
+	/*.footer__container::before {
+		background: linear-gradient(180deg, #fff, transparent 120%);
+		top: -1px;
+	}*/
+
+	.inf_holder{
+		padding: 0 40px 45px;
+	}
+}

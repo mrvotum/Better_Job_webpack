@@ -1,0 +1,626 @@
+body {
+  font-family: OpenSans-Regular;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 16px;
+  min-width: 290px;
+}
+
+h1 {
+  font-family: PT_Mono-Bold;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: PT_Mono-Bold;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+
+  background-image: url(../img/tower_mobile.jpg);
+  background-size: cover;
+  background-color: #696969;
+  padding-bottom: 19px;
+}
+.header:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  min-width: 260px;
+  height: 100%;
+
+  content: '';
+
+  background-color: rgba(190, 190, 190, .5);
+}
+
+.header__container {
+  position: relative;
+}
+.top_holder {
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.article_title {
+  background-color: #34CC99;
+  display: inline-block;
+  padding: 3px 0px;
+  box-sizing: border-box;
+}
+.article_title:before {
+  content: "+";
+  position: relative;
+  font-weight: 100;
+  top: -14px;
+  left: -6px;
+}
+.article_title:after {
+  content: "+";
+  position: relative;
+  font-weight: 700;
+  top: 14px;
+  left: 6px;
+}
+
+.burgers {
+  width: 28px;
+  height: 18px;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.icons_holder {
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-top: 110px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons_holder > svg {
+  fill: #34CC99;
+  width: 26px;
+}
+.icons_holder > svg:not(:first-child) {
+  padding-left: 23px;
+}
+
+.article__container {
+  text-align: center;
+  margin-top: 60px;
+}
+.article__container > .description_text.headers {
+  padding: 10px 40px;
+}
+
+.header__container > .button__container {
+  margin-top: 31px;
+}
+.button__container > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__container > .article__container > h1{
+  position: relative;
+}
+.header__container > .article__container > h1::after{
+  position: absolute;
+  right: 12px;
+  top: 11px;
+  font-size: 16px;
+  content: '///';
+  color: #34CC99;
+}
+
+
+.btn {
+  border: solid black 2px;
+  padding: 16px 0;
+  width: 290px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-family: PT_Mono-Bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #34CC99;
+  border-color: #34CC99;
+}
+.btn.green {
+  color: #fff;
+  border-color: #34CC99;
+  background-color: #34CC99;
+  width: 282px;
+  box-shadow: 8px 8px 0px rgba(0,0,0,1);
+  z-index: 1;
+}
+.btn.green:hover {
+  color: #fff;
+  border-color: #000;
+  background-color: #000;
+  box-shadow: 7px 7px 0px #34CC99;
+}
+/*.btn + .green:active {
+  box-shadow: none;
+}*/
+.btn.white {
+  color: #000;
+  border-color: #fff;
+  background-color: #fff;
+  box-shadow: 7px 7px 0px #000;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+.btn.white:hover {
+  color: #fff;
+  border-color: #000;
+  background-color: #000;
+  box-shadow: 7px 7px 0px #fff;
+}
+.btn.white:active {
+  box-shadow: none;
+}
+
+
+.concepts{
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+.concepts > .article__container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+.concepts > .article__container > svg {
+  fill: #34CC99;
+  width: 40px;
+}
+
+
+.description_title {
+  margin: 5px 0;
+}
+
+
+.about_program {
+  /*background: url(../img/Bundesarchiv_mobile.png) no-repeat;
+  background-size: cover;
+  top: 0;
+  background-color: #696969;*/
+  position: relative;
+}
+.about_program:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #fff, transparent);
+  top: 0;
+}
+
+.about_program > .article__container{
+  position: relative;
+}
+
+.about_program > .article__container > .button__container{
+  display: none;
+}
+
+
+.img_holder{
+  background: url(../img/Bundesarchiv_mobile.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  top: 0;
+  background-color: #696969;
+  z-index: -1;
+}
+
+.article_text {
+  padding-top: 40px;
+}
+
+.left-align{
+  text-align: left;
+  padding: 41px 17px;
+  margin-top: 0;
+}
+
+
+.why_berlin > .article__container > .button__container{
+  display: none;
+}
+
+
+
+.the_crew{
+  background-image: url(../img/hands_mobile.jpg);
+  background-size: cover;
+  background-position: ;
+  position: relative;
+  height: 220px;
+  bottom: 0;
+  left: 0;
+}
+/*.the_crew:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.65);
+  top: 0;
+}
+*/
+
+
+
+.charts__holder{
+  counter-reset: listNumber;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.important_message__holder {
+  border: 2px solid #000;
+  box-shadow: 0px 18px 0px -9px #000;
+  padding: 16px 10px;
+  /*margin-top: 30px;*/
+  background-color: #fff;
+}
+
+.chart_block{
+  width: 280px;
+  padding: 30px 60px 16px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+/*.chart_block:nth-child(n+4):nth-child(-n+6):before { /* с 3 по 5
+  top: 6px;
+}*/
+.chart_block > p{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.chart_block > p:before{
+  position: absolute;
+  counter-increment: listNumber; /* Увеличиваем значение счетчика */
+  content: counter(listNumber); /* Выводим число */
+  font-size: 48px;
+  font-family: 'PT_Mono-Bold';
+  color: #34CC99;
+  top: -28px;
+}
+
+
+
+
+.radio-btn:checked + .radio-btn_visible {
+  background: #fff;
+  border: 0.3px solid #fff;
+  margin-bottom: 9.5px;
+}
+
+.radio-btn {
+  display: none;
+}
+  
+.radio-btn_visible {
+  height:5px;
+  width: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  z-index: 2;
+  margin-bottom: 10px;
+  background-color: rgba(255,255,255, .5);
+  cursor: pointer;
+}
+.radio-btn_visible:nth-child(n+4):nth-child(odd) {
+  /* Выделяются нечётные элементы, начиная с 4-го */
+  margin-left: 7px;
+}
+
+.slider{
+  width: 288px;
+  height: 227px;
+  background-color: #000;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.slide{
+  width: 100%;
+  height: 100%;
+  background-color: #696969;
+  flex-shrink: 0;
+  transition: .5s all;
+  background-size: cover;
+  position: absolute;
+}
+
+#num1{
+  background-image: url(../img/slide_1.png);
+  opacity: 0;
+}
+#num2{
+  background-image: url(../img/slide_2_mobile.jpg);
+  opacity: 0;
+}
+#num3{
+  background-image: url(../img/slide_3.png);
+  opacity: 0;
+}
+#num4{
+  background-image: url(../img/slide_4.png);
+  opacity: 0;
+}
+#num5{
+  background-image: url(../img/slide_5.png);
+  opacity: 0;
+}
+
+#slide_1:checked ~ #num1{
+  opacity: 1;
+}
+#slide_2:checked ~ #num2{
+  opacity: 1;
+}
+#slide_3:checked ~ #num3{
+  opacity: 1;
+}
+#slide_4:checked ~ #num4{
+  opacity: 1;
+}
+#slide_5:checked ~ #num5{
+  opacity: 1;
+}
+
+.btn_arrows__holder{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.btn_arrow{
+  width: 20%;
+  height: 100%;
+  position: relative;
+}
+.btn_arrow::before{
+  content: '';
+  position: absolute;
+  top: calc(50% - 72px / 2);
+  font-family: OpenSans-Regular;
+  font-size: 72px;
+  color: rgba(255, 255, 255, .3);
+}
+#btn_left::before{
+  content: '<';
+  right: 9px;
+}
+#btn_right::before{
+  content: '>';
+  left: 9px;
+}
+
+
+
+
+
+
+
+
+
+.menu-btn{
+  width: 29px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.menu-btn .burger_lines,
+.menu-btn .burger_lines::before,
+.menu-btn .burger_lines::after {
+  position: absolute;
+  background-color: #000;
+  width: 29px;
+  height: 2px;
+  /*top: calc(50% - 1px);*/ /* margin-top: -1px; /* половина от высоты */
+  /*left: calc(50% - 14.5px);*/ /* margin-left: -14.5px; /* половина от ширины */
+}
+.menu-btn .burger_lines::before,
+.menu-btn .burger_lines::after {
+  content: '';
+}
+.menu-btn .burger_lines::before{
+  transform: translateY(-7px);
+}
+.menu-btn .burger_lines::after{
+  transform: translateY(7px);
+}
+
+/* АНИМАЦИЯ БУРГЕРОВ */
+.menu-btn_active > .burger_lines{
+  transition: .5s all;
+  background-color: transparent;
+  z-index: 10;
+  position: fixed;
+}
+.menu-btn_active > .burger_lines:before,
+.menu-btn_active > .burger_lines:after {
+  width: 20px;
+  transition: .5s all;
+  margin-left: 5px;
+  border-radius: 50px;
+}
+.menu-btn_active > .burger_lines:after{
+  transform: rotate(45deg);
+}
+.menu-btn_active > .burger_lines:before {
+  transform: rotate(-45deg);
+}
+/* АНИМАЦИЯ БУРГЕРОВ */
+
+.links_active {
+  opacity: 1!important;
+  transition-property: transform;
+  transition-duration: .5s;
+  transform: translateX(-100%);
+}
+
+.links{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #34CC99;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  left: 100vw;  
+  top: 0;
+  opacity: 0;
+  transition: .5s all;
+}
+.links > a{
+  text-decoration: none;
+  font-family: PT_Mono-Bold;
+  color: #000;
+  font-size: 26px;
+}
+.links > a:not(:first-child){
+  margin-top: 30px;
+}
+.links > a:hover{
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.footer__container{
+  /*background-image: url(../img/hands_mobile.jpg);
+  background-size: cover;*/
+  font-family: OpenSans-regular;
+  /*padding-top: 220px;
+  position: relative;
+  margin-top: -38px;*/
+  /*z-index: 0;*/
+}
+/*.footer__container:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.65);
+  top: 0;
+}*/
+
+.inf_holder{
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px 15px;
+}
+
+.mail_adress{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+@font-face{
+  font-family: 'OpenSans-Regular';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'OpenSans-Bold';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'PT_Mono-Regular';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/PT_Mono/PT_Mono-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'PT_Mono-Bold';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/PT_Mono/PT_Mono-Bold.ttf') format('truetype');
+} */
