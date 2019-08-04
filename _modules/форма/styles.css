@@ -1,0 +1,65 @@
+.form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: arial, sans-serif;
+}
+
+.form__row {
+  margin-top: 20px;
+}
+
+.form__row:first-child {
+  margin-top: 0;
+}
+
+.form__hint {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.field {
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 50px;
+  max-height: 100px;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.field {
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 100%;
+  border-radius: 0;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select {
+  background-image: url("http:/university.netology.ru/u/materials/slide/mq/pic/mobile-graphic/tel-select.svg");
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  padding-right: 35px;
+  background-color: #ffffff;
+}

@@ -33,7 +33,7 @@ module.exports = {
         ],
       },
       { // добавлено для loader'а
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(ttf|png|jpg|gif)$/i,
         use: [
           {
             loader: 'url-loader',
@@ -43,15 +43,6 @@ module.exports = {
           },
         ],
       }, // добавлено для loader'а
-      { // добавлено для file-loader'а
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {},
-          },
-        ],
-      }, // добавлено для file-loader'а
     ],
   },
   plugins: [

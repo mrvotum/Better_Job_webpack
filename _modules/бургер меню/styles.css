@@ -1,0 +1,74 @@
+body{
+  margin: 0;
+}
+
+.holder{
+  width: 100vw;
+  height: 100vh;
+  background-color: #581845;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn{
+  width: 29px;
+  height: 20px;
+  display: block;
+  background-color: #fff;
+  position: relative;
+}
+.menu-btn .burger_lines,
+.menu-btn .burger_lines::before,
+.menu-btn .burger_lines::after {
+  position: absolute;
+  background-color: #000;
+  width: 29px;
+  height: 2px;
+  top: calc(50% - 1px); /* margin-top: -1px; /* половина от высоты */
+  left: calc(50% - 14.5px); /* margin-left: -14.5px; /* половина от ширины */
+}
+.menu-btn .burger_lines::before,
+.menu-btn .burger_lines::after {
+  content: '';
+}
+.menu-btn .burger_lines::before{
+  transform: translateY(-6px);
+}
+.menu-btn .burger_lines::after{
+  transform: translateY(6px);
+}
+
+/*.menu-btn:focus > .burger_close{
+  display: block;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  z-index: 55;
+  position: absolute;
+}
+.burger_close:focus{
+  color: green;
+}*/
+
+.menu-btn:focus > .burger_lines{
+  transition: .5s all;
+  background-color: transparent;
+}
+.menu-btn:focus > .burger_lines:before,
+.menu-btn:focus > .burger_lines:after {
+  width: 20px;
+  transition: .5s all;
+  margin-left: 5px;
+  border-radius: 50px;
+}
+.menu-btn:focus > .burger_lines:after{
+  transform: rotate(45deg);
+}
+.menu-btn:focus > .burger_lines:before {
+  transform: rotate(-45deg);
+}
+
+.burger_close{
+  display: none;
+}

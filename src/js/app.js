@@ -1,4 +1,4 @@
-import CreateForm from './createForm';
+// import CreateForm from './createForm';
 
 const burgerBtn = document.querySelector('[data-id=burgerBtn]');
 const linksHolder = document.querySelector('[data-id=linksHolder]');
@@ -19,5 +19,6 @@ linksHolder.addEventListener('click', (event) => {
 
 const getGreen = document.querySelector('[data-id=getGreen]');
 getGreen.addEventListener('click', () => {
-  new CreateForm().create();
+  // new CreateForm().create();
+  console.log('мутим форму');
 });

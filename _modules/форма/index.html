@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  
+<form class="form">
+  <div class="form__row">
+    <label class="form__label">
+      <span class="form__hint">Введите ваше имя</span>
+      <input class="field" name="name" placeholder="Например, Иван" required>
+    </label>
+  </div>
+  <div class="form__row">
+    <label class="form__label">
+      <span class="form__hint">Введите ваш E-mail</span>
+      <input class="field" name="email" placeholder="Например, test@ya.ru" required>
+    </label> 
+  </div> 
+  <div class="form__row">
+    <label class="form__label">
+      <span class="form__hint">Выберите тему сообщения</span>
+      <select class="field" name="theme" required>
+        <option>Предложение по работе</option>
+        <option>Сотрудничество</option>          
+        <option>Отзыв</option>          
+      </select>
+    </label>
+  </div>  
+  <div class="form__row">  
+    <label class="form__label">
+      <span class="form__hint">Напишите сообщение</span>
+      <textarea class="field textarea" placeholder="Привет..." name="msg" ></textarea>
+    </label>
+  </div>   
+  <div class="form__row">  
+    <button class="button">Отправить</button>
+  </div>  
+</form>
+
+</body>
+</html>

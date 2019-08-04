@@ -3,7 +3,7 @@ export default class CreateForm {
     this.positionByUser = null;
   }
 
-  create() {
-    console.log('мутим форму');
-  }
+  // create() {
+  //   console.log('мутим форму');
+  // }
 }
