@@ -1,7 +1,7 @@
 {
-  "name": "AHJ_Diploma",
+  "name": "Better_Job_webpack",
   "version": "1.0.0",
-  "description": "AHJ, Diploma",
+  "description": "Better_Job",
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",
@@ -10,7 +10,7 @@
     "doc": "jsdoc -c jsdoc.conf.json",
     "start": "webpack-dev-server --mode development"
   },
-  "repository": "https://github.com/mrvotum/AHJ_Diploma",
+  "repository": "https://github.com/mrvotum/Better_Job_webpack",
   "author": "Vladimir",
   "license": "MIT",
   "devDependencies": {
